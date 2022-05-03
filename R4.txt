@@ -1,6 +1,6 @@
-ipv6 unicast-routing
 
 conf t
+ipv6 unicast-routing
 
 int l0
 no ip address
