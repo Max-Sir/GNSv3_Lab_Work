@@ -21,6 +21,8 @@ no ip redirects
 ipv6 address 2002:D284:BB82:3::2/64
 tunnel source f0/0
 tunnel mode ipv6ip 6to4
+no shutdown
+exit
 
 ipv6 route ::0/0 tunnel0 2002:D284:BB81:3::1
 
