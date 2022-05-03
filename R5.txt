@@ -1,0 +1,23 @@
+ipv6 unicast-routing
+conf t
+
+int f0/0
+no ip address
+ipv6 enable
+ipv6 address FD03:1:1:5::5/64
+ipv6 address FE80::5 link-local
+exit
+
+int e0/0
+no ip address
+ipv6 enable
+ipv6 address FD03:1:1:6::5/64
+ipv6 address FE80::5 link-local
+exit
+
+int e0/1
+no ip address
+ipv6 enable
+ipv6 address FD03:1:1:2::5/64
+ipv6 address FE80::5 link-local
+exit

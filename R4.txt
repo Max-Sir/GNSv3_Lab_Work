@@ -1,0 +1,29 @@
+conf t
+
+ipv6 unicast-routing
+
+int l0
+no ip address
+ipv6 enable
+ipv6 address 2a00:c820:a000::/29
+no shutdown
+exit
+
+int f0/0
+no ip address
+ip address 210.132.187.130 255.255.255.128
+ipv6 address FE80::4 link-local
+no shutdown
+exit
+
+int tunnel0
+no ip address
+no ip redirects
+ipv6 address 2002:D284:BB82:3::2/64
+ipv6 address FE80::4 link-local
+tunnel source f0/0
+tunnel mode ipv6ip 6to4
+
+ipv6 route ::0/0 tunnel0 2002:D284:BB81:3::1
+
+end

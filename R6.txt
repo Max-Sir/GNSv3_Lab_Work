@@ -1,0 +1,34 @@
+conf t
+
+int l0
+no ip address
+ipv6 enable
+ipv6 address 2a00:c820:b000::/29
+no shutdown
+exit
+
+int f0/0
+no ip address
+ipv6 enable
+ipv6 addr auto
+ipv6 address FE80::6 link-local
+no shutdown
+exit
+
+int e0/0
+no ip address
+ipv6 enable
+ipv6 addr auto
+ipv6 address FE80::6 link-local
+no shutdown
+exit
+
+int e0/1
+no ip address
+ipv6 enable
+ipv6 addr auto
+ipv6 address FE80::6 link-local
+no shutdown
+exit
+
+end
