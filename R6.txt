@@ -31,4 +31,6 @@ ipv6 address FE80::6 link-local
 no shutdown
 exit
 
+ipv6 route ::/0 f0/0 FE80::2
+
 end
