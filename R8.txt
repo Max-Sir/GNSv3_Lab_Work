@@ -1,9 +1,10 @@
-ipv6 unicast-routing
 conf t
+ipv6 unicast-routing
 
 int f0/0
 no ip address
 ip address 210.132.187.129 255.255.255.128
+no shutdown
 exit
 
 int e0/0
@@ -11,13 +12,15 @@ no ip address
 ipv6 enable
 ipv6 address FD03:1:1:A::8/64
 ipv6 address FE80::8 link-local
+no shutdown
 exit
 
-int e0/1
+int e1/0
 no ip address
 ipv6 enable
 ipv6 address FD03:1:1:6::8/64
 ipv6 address FE80::8 link-local
+no shutdown
 exit
 
 
@@ -27,5 +30,7 @@ no ip redirects
 ipv6 address 2002:D284:BB81:3::1/64
 tunnel source f0/0
 tunnel mode ipv6ip 6to4
+no shutdown
+exit
 
 ipv6 route ::/0 tunnel0 2002:D284:BB82:3::2

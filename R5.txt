@@ -1,11 +1,12 @@
-ipv6 unicast-routing
 conf t
+ipv6 unicast-routing
 
 int f0/0
 no ip address
 ipv6 enable
 ipv6 address FD03:1:1:5::5/64
 ipv6 address FE80::5 link-local
+no shutdown
 exit
 
 int e0/0
@@ -13,13 +14,15 @@ no ip address
 ipv6 enable
 ipv6 address FD03:1:1:6::5/64
 ipv6 address FE80::5 link-local
+no shutdown
 exit
 
-int e0/1
+int e1/0
 no ip address
 ipv6 enable
 ipv6 address FD03:1:1:2::5/64
 ipv6 address FE80::5 link-local
+no shutdown
 exit
 
 ipv6 route ::/0 f0/0 FE80::3
