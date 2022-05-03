@@ -22,4 +22,4 @@ ipv6 address FD03:1:1:4::1/64
 ipv6 address FE80::1 link-local
 exit
 
-ipv6 route 
+ipv6 route ::/0 e0/1 FE80::7
