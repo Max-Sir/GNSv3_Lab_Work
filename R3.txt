@@ -21,3 +21,5 @@ ipv6 enable
 ipv6 address FD03:1:1:4::3/64
 ipv6 address FE80::3 link-local
 exit
+
+ipv6 route ::/0 e0/1 FE80::1
