@@ -39,4 +39,8 @@ ipv6 route fd03:1:1:4::/64 e0/0 FE80::7
 ipv6 route fd03:1:1:5::/64 e0/0 FE80::7
 ipv6 route fd03:1:1:2::/64 e0/0 FE80::7
 ipv6 route fd03:1:1:7::/64 e0/0 FE80::7
+
+ipv6 route fd03:1:1:3::/64 e0/0 FE80::7
+ipv6 route fd03:1:1:1::/64 e0/0 FE80::7
+ipv6 route fd03:1:1:8::/64 e0/0 FE80::7
 end
