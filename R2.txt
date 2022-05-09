@@ -26,3 +26,9 @@ no shutdown
 exit
 
 ipv6 route ::/0 e1/0 FE80::5
+
+ipv6 route fd03:1:1:4::/64 e0/0 fe80::3
+ipv6 route fd03:1:1:a::/64 e0/0 fe80::3
+ipv6 route fd03:1:1:9::/64 e0/0 fe80::3
+
+end
