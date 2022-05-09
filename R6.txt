@@ -3,7 +3,7 @@ conf t
 int l0
 no ip address
 ipv6 enable
-ipv6 address 2a00:c820:b000::/29
+ipv6 address 2a00:c820:b000::/64
 no shutdown
 exit
 
@@ -22,7 +22,6 @@ ipv6 addr auto
 ipv6 address FE80::6 link-local
 no shutdown
 exit
-
 
 int e0/0
 no ip address

@@ -21,4 +21,9 @@ ipv6 address FD03:1:1:4::1/64
 ipv6 address FE80::1 link-local
 no shutdown
 exit
-ipv6 route ::/0 e1/0 FE80::7
+
+ipv6 route ::/0 f0/0 FE80::7
+ipv6 route fd03:1:1:5::/64 e1/0 FE80::3
+ipv6 route fd03:1:1:2::/64 e1/0 FE80::3
+ipv6 route fd03:1:1:7::/64 e1/0 FE80::3
+end
