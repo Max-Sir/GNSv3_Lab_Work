@@ -28,3 +28,4 @@ exit
 ipv6 route ::/0 e1/0 FE80::1
 ipv6 route fd03:1:1:2::/64 f0/0 FE80::5
 ipv6 route fd03:1:1:7::/64 f0/0 FE80::5
+end
