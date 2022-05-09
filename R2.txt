@@ -7,6 +7,7 @@ ipv6 enable
 ipv6 address FD03:1:1:7::2/64
 ipv6 address FE80::2 link-local
 no shutdown
+ipv6 nd dad attempts 2
 exit
 
 int e0/0
