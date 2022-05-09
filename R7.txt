@@ -17,7 +17,6 @@ ipv6 address FE80::7 link-local
 no shutdown
 exit
 
-
 int f0/0
 no ip address
 ipv6 enable
@@ -27,3 +26,8 @@ no shutdown
 exit
 
 ipv6 route ::/0 e0/0 FE80::8
+ipv6 route fd03:1:1:4::/64 f0/0 FE80::1
+ipv6 route fd03:1:1:5::/64 f0/0 FE80::1
+ipv6 route fd03:1:1:2::/64 f0/0 FE80::1
+ipv6 route fd03:1:1:7::/64 f0/0 FE80::1
+end
